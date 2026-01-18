@@ -15,11 +15,7 @@ if (retryBtn && card) {
 
 const OFFICIAL_URLS = new Set([
   'https://backuppass.github.io/Authentic-Product/',
-  'https://backuppass.github.io/Authentic-Product',
-  'https://plingifyplug.com/',
-  'https://plingifyplug.com',
-  'https://plingifyplug.odoo.com/',
-  'https://plingifyplug.odoo.com'
+  'https://backuppass.github.io/Authentic-Product'
 ]);
 
 const scanArea = document.getElementById('scan-area');
