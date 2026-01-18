@@ -15,7 +15,11 @@ if (retryBtn && card) {
 
 const OFFICIAL_URLS = new Set([
   'https://backuppass.github.io/Authentic-Product/',
-  'https://backuppass.github.io/Authentic-Product'
+  'https://backuppass.github.io/Authentic-Product',
+  'https://plingifyplug.com/',
+  'https://plingifyplug.com',
+  'https://plingifyplug.odoo.com/',
+  'https://plingifyplug.odoo.com'
 ]);
 
 const scanArea = document.getElementById('scan-area');
@@ -131,13 +135,13 @@ async function stopScan() {
   stopBtn.disabled = true;
 
   if (!verifiedContent.classList.contains('hidden')) return;
-  setPill('warning', 'Scanner: Waiting');
+  setPill('warning', 'Scanner: Waiting for Camera');
   scanHint.textContent = 'Press Start scanning to verify';
 }
 
 startBtn?.addEventListener('click', startScan);
 stopBtn?.addEventListener('click', stopScan);
 
-setPill('warning', 'Scanner: Waiting');
+setPill('warning', 'Scanner: Waiting for Camera');
 scanHint.textContent = 'Press Start scanning to verify authenticity';
 verifiedContent.classList.add('hidden');
