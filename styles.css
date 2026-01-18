@@ -261,3 +261,64 @@ a.btn{
   background: rgba(234,179,8,.20);
   color:#fef9c3;
 }
+
+.qr-wrap{
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 12px auto 10px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(0,0,0,.25);
+}
+
+#qr-reader, #qr-reader video{
+  width: 100% !important;
+  height: auto !important;
+}
+
+.scan-dim, .scan-corners{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.scan-dim::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:min(240px, 70vw);
+  height:min(240px, 70vw);
+  transform:translate(-50%,-50%);
+  box-shadow: 0 0 0 999px rgba(0,0,0,.35);
+  border-radius: 18px;
+}
+
+.scan-corners{
+  --c: rgba(90,200,250,.95);
+  --w: 34px;
+  --t: 3px;
+}
+
+.scan-corners::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:min(240px, 70vw);
+  height:min(240px, 70vw);
+  transform:translate(-50%,-50%);
+  border-radius: 18px;
+  background:
+    linear-gradient(var(--c),var(--c)) left top / var(--w) var(--t) no-repeat,
+    linear-gradient(var(--c),var(--c)) left top / var(--t) var(--w) no-repeat,
+    linear-gradient(var(--c),var(--c)) right top / var(--w) var(--t) no-repeat,
+    linear-gradient(var(--c),var(--c)) right top / var(--t) var(--w) no-repeat,
+    linear-gradient(var(--c),var(--c)) left bottom / var(--w) var(--t) no-repeat,
+    linear-gradient(var(--c),var(--c)) left bottom / var(--t) var(--w) no-repeat,
+    linear-gradient(var(--c),var(--c)) right bottom / var(--w) var(--t) no-repeat,
+    linear-gradient(var(--c),var(--c)) right bottom / var(--t) var(--w) no-repeat;
+  filter: drop-shadow(0 0 8px rgba(90,200,250,.25));
+}
