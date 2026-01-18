@@ -11,72 +11,72 @@
   <div class="shade"></div>
 
   <div class="wrap">
-    <div class="card" id="auth-card">
-      <h1>PlingifyPlug</h1>
+ <div class="card" id="auth-card">
+  <h1>PlingifyPlug</h1>
 
-      <div id="scan-area">
-        <div class="subtitle">
-          Scan the QR code shown inside your PlingifyPlug product to verify authenticity.
-        </div>
+  <div id="scan-area">
+    <div class="subtitle">
+      Scan the QR code shown inside your PlingifyPlug product to verify authenticity.
+    </div>
 
-        <div class="pill-row">
-          <span class="pill warning" id="scan-pill">Scanner: Waiting For Camera</span>
-          <span class="pill" id="scan-hint">Allow camera access to continue</span>
-        </div>
+    <div class="pill-row">
+      <span class="pill warning" id="scan-pill">Scanner: Waiting For Camera</span>
+      <span class="pill" id="scan-hint">Allow camera access to continue</span>
+    </div>
 
-        <div class="qr-wrap">
+            <div class="qr-wrap">
           <div id="qr-reader"></div>
           <div class="scan-dim" aria-hidden="true"></div>
           <div class="scan-corners" aria-hidden="true"></div>
         </div>
 
-        <div class="actions">
-          <button class="btn ghost" id="start-scan" type="button">Start scanning</button>
-          <button class="btn ghost" id="stop-scan" type="button" disabled>Stop</button>
-          <button class="btn ghost" id="retry-btn" type="button">Refresh Page</button>
-        </div>
-
-        <div class="small" id="scan-result"></div>
-      </div>
-
-      <div id="verified-content" class="hidden">
-        <div class="subtitle" id="subtitle-text">
-          Your product is authentic and officially supported.
-        </div>
-
-        <div class="pill-row">
-          <span class="pill ok" id="status-pill">Authenticity: Verified</span>
-          <span class="pill" id="reason-pill">Verified via Official QR Destination</span>
-        </div>
-
-        <div class="body-text">
-          You have reached the official PlingifyPlug authenticity confirmation page.
-        </div>
-
-        <ul class="clean">
-          <li>• Authentic products receive updates, security support, and compatibility fixes.</li>
-          <li>• Unofficial or modified copies may be unsafe or unsupported.</li>
-          <li>• Only the supported products listed below are covered by this authenticity page.</li>
-        </ul>
-
-        <ul class="clean">
-          <li><strong>Supported products:</strong></li>
-          <li>• Vinti</li>
-          <li>• PlingifyPlug-Hub</li>
-        </ul>
-
-        <div class="actions">
-          <a class="btn ghost" href="https://backuppass.github.io/Product-Centre/">Product Centre</a>
-          <a class="btn ghost" href="https://backuppass.github.io/Status-Centre/">Status Centre</a>
-          <button class="btn ghost" id="retry-btn-verified" type="button">Refresh Page</button>
-        </div>
-
-        <div class="small">
-          If you did not scan a QR code from a PlingifyPlug product, be cautious.
-          Always download from the <span class="mono">Product Centre</span> or official PlingifyPlug pages.
-        </div>
-      </div>
+    <div class="actions">
+      <button class="btn ghost" id="start-scan" type="button">Start scanning</button>
+      <button class="btn ghost" id="stop-scan" type="button" disabled>Stop</button>
+      <button class="btn ghost" id="retry-btn" type="button">Refresh Page</button>
     </div>
+
+    <div class="small" id="scan-result"></div>
+  </div>
+
+  <div id="verified-content" class="hidden">
+    <div class="subtitle" id="subtitle-text">
+      Your product is authentic and officially supported.
+    </div>
+
+    <div class="pill-row">
+      <span class="pill ok" id="status-pill">Authenticity: Verified</span>
+      <span class="pill" id="reason-pill">Verified via Official QR Destination</span>
+    </div>
+
+    <div class="body-text">
+      You have reached the official PlingifyPlug authenticity confirmation page.
+    </div>
+
+    <ul class="clean">
+      <li>• Authentic products receive updates, security support, and compatibility fixes.</li>
+      <li>• Unofficial or modified copies may be unsafe or unsupported.</li>
+      <li>• Only the supported products listed below are covered by this authenticity page.</li>
+    </ul>
+
+    <ul class="clean">
+      <li><strong>Supported products:</strong></li>
+      <li>• Vinti</li>
+      <li>• PlingifyPlug-Hub</li>
+    </ul>
+
+    <div class="actions">
+      <a class="btn ghost" href="https://backuppass.github.io/Product-Centre/">Product Centre</a>
+      <a class="btn ghost" href="https://backuppass.github.io/Status-Centre/">Status Centre</a>
+      <button class="btn ghost" id="retry-btn-verified" type="button">Refresh Page</button>
+    </div>
+
+    <div class="small">
+      If you did not scan a QR code from a PlingifyPlug product, be cautious.
+      Always download from the <span class="mono">Product Centre</span> or official PlingifyPlug pages.
+    </div>
+  </div>
+</div>
   </div>
 
   <div class="footer">
@@ -88,6 +88,7 @@
   </div>
 
   <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="script.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
