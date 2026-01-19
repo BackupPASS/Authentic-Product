@@ -210,26 +210,31 @@ a.btn{
   animation:pulse 0.6s ease-out;
 }
 
-.footer{
+     .footer {
   color: #fff;
   text-align: center;
-  padding: 8px 10px;
+  padding: 8px 0; 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   border-radius: 35px 35px 0 0;
+  overflow: hidden;
+
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: saturate(180%) blur(30px);
   -webkit-backdrop-filter: saturate(180%) blur(30px);
+
   box-shadow:
     0 8px 32px 0 rgba(31, 38, 135, 0.37),
     inset 0 0 0 1px rgba(255, 255, 255, 0.18);
-  font-size:12px;
+
+  transition: background-color 0.3s ease;
 }
-.footer a{
-  color:#fff;
-  text-decoration:none;
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }
 .footer a:hover{text-decoration:underline;}
 
@@ -261,3 +266,4 @@ a.btn{
   background: rgba(234,179,8,.20);
   color:#fef9c3;
 }
+
