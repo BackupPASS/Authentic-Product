@@ -98,12 +98,10 @@ h1{
   white-space:nowrap;
 }
 
-/* Keep primary pill first */
 #status-pill {
   order: 1;
 }
 
-/* Reason pill drops onto its own line and wraps nicely */
 #reason-pill {
   order: 2;
   flex: 1 1 100%;
@@ -173,19 +171,18 @@ ul.clean li{
   z-index:1;
 }
 
-               .btn{
-      all:unset; cursor:pointer;
-      color:#fff;
-      padding:8px 12px; border-radius:10px; font-size:13px;
-      border:1px solid rgba(255,255,255,.08);
+  .btn{
+  all:unset; cursor:pointer;
+  color:#fff;
+  padding:8px 12px; border-radius:10px; font-size:13px;
+  border:1px solid rgba(255,255,255,.08);
+  transition:
+  transform .12s ease,
+  box-shadow .18s ease,
+  border-color .18s ease,
+  filter .18s ease;
 
-        transition:
-    transform .12s ease,
-    box-shadow .18s ease,
-    border-color .18s ease,
-    filter .18s ease;
-
-      box-shadow: 0 8px 20px rgba(0,0,0,.18);
+  box-shadow: 0 8px 20px rgba(0,0,0,.18);
   will-change: transform;
   transform: translateZ(0);
   white-space: nowrap;
@@ -283,7 +280,7 @@ ul.clean li{
   margin: 12px auto 10px;
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 5px solid rgba(255,255,255,.18);
   background: rgba(0,0,0,.25);
 }
 #qr-reader video{
@@ -296,5 +293,6 @@ ul.clean li{
   background: rgba(234,179,8,.20);
   color:#fef9c3;
 }
+
 
 
